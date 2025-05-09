@@ -3,36 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpsAI - AI-Powered Customer Support for SMEs</title>
+    <title>FounderOS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
         body {
             font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
         }
+
+        .text-sm {
+            font-size: 14px;
+        }
+
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .icon-default {
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon-small {
+            width: 18px;
+            height: 18px;
+        }
+
         .gradient-bg {
             background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
         }
+
+        /* 👇 Animated wave gradient text */
+        @keyframes gradient-wave {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .wave-gradient {
+            background: linear-gradient(
+                270deg,
+                #ffffff,
+                #fde68a,
+                #fde68a,
+                #fde68a,
+                #ffffff,
+                #bfdbfe,
+                #fde68a,
+                #ffffff
+            );
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient-wave 6s linear infinite;
+        }
     </style>
+
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
+    <!-- Navigation - Updated by removing How It Works button and applying font sizes -->
     <nav class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="text-2xl font-bold text-blue-600">OpsAI</div>
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-blue-600">FounderOS</div>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-sm">Alpha</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 font-medium">How It Works</a>
+                    <!-- How It Works button removed -->
                     <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium">Features</a>
                     <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
                     <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition">Request Early Access</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
@@ -41,218 +98,231 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="gradient-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
-                Instant AI-Powered Customer Support — Without Hiring or Hassle
-            </h1>
-            <p class="mt-6 text-xl md:text-2xl text-white opacity-90 max-w-3xl mx-auto">
-                Spin up a full AI customer support system in just 30 minutes. CRM, Ticketing, AI Agent, Campaigns — done for you.
+    <!-- Hero Section with Gradient Text -->
+    <div class="gradient-bg bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <h1 class="text-4xl md:text-5xl font-semibold leading-tight relative">
+        <span class="wave-gradient">
+            Streamline Your Business Operations.
+        </span>
+        </h1>
+        <p class="mt-6 text-xl text-white opacity-90 max-w-3xl mx-auto font-normal">
+        FounderOS provides a complete operations solution for your business, handling everything from customer inquiries to sales follow-ups, with implementation in under 30 minutes.
+        </p>
+        <div class="mt-16">
+        <img src="image2.png" alt="Operations Platform Dashboard" class="rounded-lg shadow-2xl mx-auto"/>
+        </div>
+    </div>
+    </div>
+    <!-- What is FounderOS Section -->
+    <div class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">What is FounderOS?</h2>
+            <p class="text-base text-gray-700 max-w-3xl mx-auto">
+                Consider FounderOS as the operations team you wish you could afford. We handle your support tickets, follow up with leads, nurture customers, and manage your CRM — without you needing to hire a single person or become a tools expert. It functions as an entire operations department that works 24/7, never takes vacations, and costs a fraction of hiring.
             </p>
-            <div class="mt-10">
-                <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-gray-100 transition shadow-lg">
-                    Request Early Access
-                </a>
+        </div>
+    </div>
+
+    <!-- Module Showcase Section - Updated with font sizes and icon sizes -->
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-16">
+                Modules That Transform Your Business
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Customer Support Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-3 text-gray-700">
+                            <i class="far fa-comments text-2xl" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Customer Support</h3>
+                    </div>
+                    <p class="text-base text-gray-600 mb-4">
+                        Handle customer inquiries efficiently with automated responses, ticket tracking, and seamless escalation processes.
+                    </p>
+                    <div class="flex items-center text-sm text-green-600">
+                        <i class="fas fa-check-circle mr-1" style="width: 18px; height: 18px;"></i>
+                        <span>Available Now</span>
+                    </div>
+                </div>
+                
+                <!-- Marketing Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-3 text-gray-700">
+                            <i class="fas fa-bullhorn text-2xl" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Marketing</h3>
+                    </div>
+                    <p class="text-base text-gray-600 mb-4">
+                        Create and manage marketing campaigns for your business with automated content generation and campaign tracking.
+                    </p>
+                    <div class="flex items-center text-sm text-green-600">
+                        <i class="fas fa-check-circle mr-1" style="width: 18px; height: 18px;"></i>
+                        <span>Available Now</span>
+                    </div>
+                </div>
+                
+                <!-- Sales Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-3 text-gray-700">
+                            <i class="fas fa-dollar-sign text-2xl" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Sales</h3>
+                    </div>
+                    <p class="text-base text-gray-600 mb-4">
+                        Automate lead qualification, follow-ups, and meeting scheduling to streamline your sales process.
+                    </p>
+                    <div class="flex items-center text-sm text-blue-600">
+                        <i class="fas fa-clock mr-1" style="width: 18px; height: 18px;"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+                
+                <!-- Hiring & Recruitment Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-3 text-gray-700">
+                            <i class="fas fa-users text-2xl" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Hiring & Recruitment</h3>
+                    </div>
+                    <p class="text-base text-gray-600 mb-4">
+                        Streamline your hiring process with candidate screening and interview scheduling automation.
+                    </p>
+                    <div class="flex items-center text-sm text-blue-600">
+                        <i class="fas fa-clock mr-1" style="width: 18px; height: 18px;"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+                
+                <!-- Accounting Module -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-3 text-gray-700">
+                            <i class="fas fa-chart-bar text-2xl" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-medium">Accounting</h3>
+                    </div>
+                    <p class="text-base text-gray-600 mb-4">
+                        Automated expense tracking, invoice processing, and financial reporting for your business.
+                    </p>
+                    <div class="flex items-center text-sm text-blue-600">
+                        <i class="fas fa-clock mr-1" style="width: 18px; height: 18px;"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+                
             </div>
-            <div class="mt-16">
-                <img src="/api/placeholder/800/400" alt="AI Support Platform Dashboard" class="rounded-lg shadow-2xl mx-auto"/>
+            <div class="text-center">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-md font-medium text-base hover:bg-blue-700 transition shadow-md">
+                    Get Early Access to All Modules
+                </a>
             </div>
         </div>
     </div>
 
     <!-- Problem Section -->
-    <div class="bg-white py-20">
+    <div class="bg-gray-50 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-                Hiring and Managing Support Teams is Slow, Expensive, and Drains Growth
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-16">
+                The Hidden Cost of DIY Business Operations
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="text-red-500 mb-4">
-                        <i class="fas fa-clock text-4xl"></i>
+                        <i class="fas fa-tools text-2xl" style="width: 24px; height: 24px;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Time Consuming</h3>
-                    <p class="text-gray-600">Training agents takes months (and costs a fortune).</p>
+                    <h3 class="text-xl font-medium mb-2">Tool Fatigue</h3>
+                    <p class="text-base text-gray-600">You're juggling 5+ platforms and nothing talks to each other. It's exhausting.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="text-red-500 mb-4">
-                        <i class="fas fa-user-minus text-4xl"></i>
+                        <i class="fas fa-hourglass-half text-2xl" style="width: 24px; height: 24px;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Customer Churn</h3>
-                    <p class="text-gray-600">Customers leave when support is slow or inconsistent.</p>
+                    <h3 class="text-xl font-medium mb-2">Customer Ghosting</h3>
+                    <p class="text-base text-gray-600">That 12-hour response time is killing your business. People expect answers now.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="text-red-500 mb-4">
-                        <i class="fas fa-inbox text-4xl"></i>
+                        <i class="fas fa-cogs text-2xl" style="width: 24px; height: 24px;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Manual Nightmare</h3>
-                    <p class="text-gray-600">Managing tickets and emails manually is overwhelming.</p>
+                    <h3 class="text-xl font-medium mb-2">Hiring Headaches</h3>
+                    <p class="text-base text-gray-600">Finding, training and managing ops people is expensive and time-consuming.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="text-red-500 mb-4">
-                        <i class="fas fa-chart-line text-4xl"></i>
+                        <i class="fas fa-chart-line text-2xl" style="width: 24px; height: 24px;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Scaling Bottleneck</h3>
-                    <p class="text-gray-600">Scaling support as you grow becomes a major obstacle.</p>
+                    <h3 class="text-xl font-medium mb-2">Scaling Ceiling</h3>
+                    <p class="text-base text-gray-600">Your growth is capped by how quickly you can add headcount. That's not sustainable.</p>
                 </div>
             </div>
-            <p class="text-xl text-center mt-12 max-w-3xl mx-auto text-gray-700">
-                Startups and SMEs need a better way — fast, reliable, affordable support infrastructure from Day 1.
-            </p>
         </div>
     </div>
 
     <!-- Solution Section -->
-    <div class="bg-gray-50 py-20" id="features">
+    <div class="bg-white py-20" id="features">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-                Your AI Support System, Ready in 30 Minutes
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-16">
+                Your Complete Ops System, Ready in Minutes (Not Months)
             </h2>
-            <div class="flex flex-col md:flex-row items-center mb-16">
+            <div class="flex flex-col items-center mb-16">
                 <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-                    <p class="text-xl text-gray-700 mb-8">
-                        Our platform gives you a turnkey customer support operation — powered by AI — so you can stay focused on growth, not tickets.
+                    <p class="text-base text-gray-700 mb-8">
+                        We don't just give you tools, we give you results. FounderOS is pre-configured, pre-integrated, and ready to handle real customers from day one.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">CRM to manage customer data</p>
+                            <p class="text-base text-gray-700">Smart CRM that automatically updates itself</p>
                         </div>
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">Ticketing system with Kanban workflow</p>
+                            <p class="text-base text-gray-700">Visual ticketing with zero setup hassle</p>
                         </div>
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">AI Agent trained on your business info</p>
+                            <p class="text-base text-gray-700">Automated agents that sound like your best employee</p>
                         </div>
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">Email listener to capture inbound queries</p>
+                            <p class="text-base text-gray-700">Email monitoring that never misses a lead</p>
                         </div>
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">Analytics dashboard for insights</p>
+                            <p class="text-base text-gray-700">Insights dashboard you'll actually use</p>
                         </div>
                         <div class="flex items-start">
                             <div class="text-green-500 mr-2 mt-1">
-                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-check-circle" style="width: 18px; height: 18px;"></i>
                             </div>
-                            <p class="text-gray-700">Automated marketing (emails, WhatsApp)</p>
+                            <p class="text-base text-gray-700">Multi-channel outreach that converts</p>
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img src="/api/placeholder/600/400" alt="Platform Features" class="rounded-lg shadow-lg" />
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition shadow-md">
-                    Request Early Access
-                </a>
             </div>
         </div>
     </div>
 
-    <!-- How It Works Section -->
-    <div class="bg-white py-20" id="how-it-works">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
-                How It Works
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-blue-600 text-2xl font-bold">1</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Sign Up & Connect Your Info</h3>
-                    <p class="text-gray-600">Upload FAQs, past tickets, or business docs (takes minutes).</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-blue-600 text-2xl font-bold">2</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Spin Up Your AI Support</h3>
-                    <p class="text-gray-600">Our AI agent is trained instantly and ready to handle real customers.</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-blue-600 text-2xl font-bold">3</span>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Launch, Support, and Grow</h3>
-                    <p class="text-gray-600">Track tickets, view analytics, and automate campaigns — all without hiring a team.</p>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition shadow-md">
-                    Get Early Access
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Why Us Section -->
-    <div class="bg-gray-900 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
-                Why SMEs and Startups Choose Us
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="text-blue-400 mb-4">
-                        <i class="fas fa-bolt text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">30-minute setup</h3>
-                    <p class="text-gray-300">No technical skills needed to get started.</p>
-                </div>
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="text-blue-400 mb-4">
-                        <i class="fas fa-shield-alt text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Fully managed</h3>
-                    <p class="text-gray-300">No hiring, no training required.</p>
-                </div>
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="text-blue-400 mb-4">
-                        <i class="fas fa-expand-arrows-alt text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Scalable from day one</h3>
-                    <p class="text-gray-300">Grow your operations effortlessly.</p>
-                </div>
-                <div class="p-6 bg-gray-800 rounded-lg">
-                    <div class="text-blue-400 mb-4">
-                        <i class="fas fa-user-friends text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Human fallback</h3>
-                    <p class="text-gray-300">Option to route to a human when needed.</p>
-                </div>
-            </div>
-            <p class="text-xl text-center mt-12 max-w-3xl mx-auto opacity-90">
-                You're not getting a chatbot. You're getting a full customer support infrastructure — built for scale.
-            </p>
-            <div class="text-center mt-8">
-                <a href="#contact" class="bg-blue-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-600 transition shadow-md">
-                    Join the Early Access Program
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- FAQ Section -->
+    <!-- FAQ Section - Re-added with updated font sizes and icon sizes -->
     <div class="bg-white py-20" id="faq">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-16">
                 Frequently Asked Questions
             </h2>
             
@@ -260,12 +330,12 @@
                 <!-- FAQ Item 1 -->
                 <div class="border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
-                        <span class="text-lg font-semibold">Is this just a chatbot?</span>
-                        <i class="fas fa-chevron-down text-blue-500" id="icon-1"></i>
+                        <span class="text-lg font-medium">Is this just another customer service solution?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-1" style="width: 18px; height: 18px;"></i>
                     </button>
                     <div class="mt-3 hidden" id="faq-1">
-                        <p class="text-gray-600">
-                            No. It's a full customer support system — CRM, Ticketing, AI agent, Email listener, and Analytics — ready to run.
+                        <p class="text-base text-gray-600">
+                            Not at all. Traditional solutions solve single problems. FounderOS is your entire operations department , handling everything from customer inquiries to sales follow-ups to onboarding workflows. It functions like a team of specialists who work 24/7, never get tired, and always follow your established protocols.
                         </p>
                     </div>
                 </div>
@@ -273,12 +343,12 @@
                 <!-- FAQ Item 2 -->
                 <div class="border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
-                        <span class="text-lg font-semibold">Can I train the AI on my business-specific information?</span>
-                        <i class="fas fa-chevron-down text-blue-500" id="icon-2"></i>
+                        <span class="text-lg font-medium">Can I customize the system with my business-specific information?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-2" style="width: 18px; height: 18px;"></i>
                     </button>
                     <div class="mt-3 hidden" id="faq-2">
-                        <p class="text-gray-600">
-                            Absolutely. You can upload FAQs, past chats, emails, and documents — and our system trains the AI automatically.
+                        <p class="text-base text-gray-600">
+                            Absolutely. We consider this essential. During onboarding, we capture your brand voice, processes, and knowledge base. The result is a system that represents your business authentically, not with generic responses. Your customers will appreciate the consistent, professional communication.
                         </p>
                     </div>
                 </div>
@@ -286,12 +356,12 @@
                 <!-- FAQ Item 3 -->
                 <div class="border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(3)">
-                        <span class="text-lg font-semibold">What if the AI can't answer a customer's query?</span>
-                        <i class="fas fa-chevron-down text-blue-500" id="icon-3"></i>
+                        <span class="text-lg font-medium">What if the system can't handle a task?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-3" style="width: 18px; height: 18px;"></i>
                     </button>
                     <div class="mt-3 hidden" id="faq-3">
-                        <p class="text-gray-600">
-                            The ticket will be escalated to a human (your team or an external agent) automatically.
+                        <p class="text-base text-gray-600">
+                            Our system recognizes its limitations. When it encounters something too complex, it gracefully escalates to your team (or our specialists if you prefer). The handoff is seamless, and the system improves from each escalation to become more effective over time.
                         </p>
                     </div>
                 </div>
@@ -299,12 +369,12 @@
                 <!-- FAQ Item 4 -->
                 <div class="border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(4)">
-                        <span class="text-lg font-semibold">How long does onboarding take?</span>
-                        <i class="fas fa-chevron-down text-blue-500" id="icon-4"></i>
+                        <span class="text-lg font-medium">How long does onboarding take?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-4" style="width: 18px; height: 18px;"></i>
                     </button>
                     <div class="mt-3 hidden" id="faq-4">
-                        <p class="text-gray-600">
-                            Less than 30 minutes. It's designed for founders and small teams.
+                        <p class="text-base text-gray-600">
+                            Just 30 minutes of your time for a kickoff call. After that, we handle everything. We'll configure your system, establish the processes, and have you operational typically within a day. It's designed for busy founders who require results, not another project to manage.
                         </p>
                     </div>
                 </div>
@@ -312,53 +382,66 @@
                 <!-- FAQ Item 5 -->
                 <div class="border-b border-gray-200 pb-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(5)">
-                        <span class="text-lg font-semibold">How is this different from Zendesk/Freshdesk?</span>
-                        <i class="fas fa-chevron-down text-blue-500" id="icon-5"></i>
+                        <span class="text-lg font-medium">How is this different from Zendesk/Freshdesk/ZOHO?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-5" style="width: 18px; height: 18px;"></i>
                     </button>
                     <div class="mt-3 hidden" id="faq-5">
-                        <p class="text-gray-600">
-                            Zendesk sells software. We deliver a ready-to-run <strong>support operation</strong> — no tools to manage, no setup burden.
+                        <p class="text-base text-gray-600">
+                            They provide software that you must configure, staff, and manage. We deliver a complete, ready-to-run operations solution. You don't need to become an expert in our platform , we operate it for you. It's comparable to the difference between purchasing a vehicle kit and employing a professional driver.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(6)">
+                        <span class="text-lg font-medium">Can FounderOS handle more than just customer support?</span>
+                        <i class="fas fa-chevron-down text-blue-500" id="icon-6" style="width: 18px; height: 18px;"></i>
+                    </button>
+                    <div class="mt-3 hidden" id="faq-6">
+                        <p class="text-base text-gray-600">
+                            Absolutely. We typically begin with support because it's the most immediate pain point, but our platform is designed to handle your entire customer journey. Sales follow-ups, onboarding workflows, renewal campaigns , all are integrated within the same system, with specialized automation for each function. Consider it your comprehensive operations ecosystem, not merely a support tool.
                         </p>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-12">
-                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition shadow-md">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-md font-medium text-base hover:bg-blue-700 transition shadow-md">
                     I'm Ready for Early Access
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Final CTA Section -->
+    <!-- Final CTA Section with Formspree Integration -->
     <div class="gradient-bg py-20" id="contact">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to Automate Your Customer Support?
+            <h2 class="text-3xl font-semibold text-white mb-6">
+                Ready to Automate Your Business Operations?
             </h2>
             <p class="text-xl text-white opacity-90 mb-10">
-                No hiring. No setup headaches. Just instant, scalable support.
+                No hiring. No setup headaches. Just instant, scalable operations.
             </p>
             <div class="bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold mb-6 text-gray-900">Request Early Access</h3>
-                <form>
+                <h3 class="text-2xl font-medium mb-6 text-gray-900">Request Early Access</h3>
+                <form action="https://formspree.io/f/mnndzdel" method="POST" id="earlyAccessForm">
                     <div class="grid grid-cols-1 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Work Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
                         </div>
                         <div>
                             <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-                            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
                         </div>
                         <div>
                             <label for="employees" class="block text-sm font-medium text-gray-700 mb-1">Company Size</label>
-                            <select id="employees" name="employees" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            <select id="employees" name="employees" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" required>
                                 <option value="">Select company size</option>
                                 <option value="1-10">1-10 employees</option>
                                 <option value="11-50">11-50 employees</option>
@@ -367,15 +450,17 @@
                             </select>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">How can we help you?</label>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">What's your biggest operations challenge?</label>
                             <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
                         </div>
                         <div>
-                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-bold hover:bg-blue-700 transition">
-                                Submit Request
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-medium hover:bg-blue-700 transition text-base">
+                                Get Early Access
                             </button>
                         </div>
                     </div>
+                    
+                    <input type="hidden" name="_subject" value="New FounderOS Early Access Request">
                 </form>
             </div>
         </div>
@@ -386,47 +471,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="md:flex md:items-center md:justify-between">
                 <div class="mb-8 md:mb-0">
-                    <div class="text-2xl font-bold text-white mb-4">OpsAI</div>
-                    <p class="text-gray-400">Customer Support Infrastructure for SMEs</p>
-                </div>
-                <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">Product</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
-                            <li><a href="#how-it-works" class="text-gray-400 hover:text-white">How It Works</a></li>
-                            <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
-                        </ul>
+                    <div class="flex items-center">
+                        <div class="text-2xl font-semibold text-white">FounderOS</div>
+                        <span class="ml-2 bg-blue-700 text-xs text-white px-2 py-1 rounded-md">Alpha</span>
                     </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">Company</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase mb-4">Connect</h3>
-                        <ul class="space-y-3">
-                            <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
-                            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
-                        </ul>
-                    </div>
+                    <p class="text-gray-400 mt-2 text-base">Operations Infrastructure for SMEs</p>
                 </div>
             </div>
             <div class="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
-                <p class="text-gray-400 text-sm">&copy; 2025 OpsAI. All rights reserved.</p>
+                <p class="text-gray-400 text-sm">&copy; 2025 FounderOS. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-github"></i>
+                    <a href="https://www.linkedin.com/in/bhavesh-sirvi-6045281b7/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin" style="width: 24px; height: 24px;"></i>
                     </a>
                 </div>
             </div>
@@ -434,20 +490,138 @@
     </footer>
 
     <script>
+        // FAQ Toggle Function
         function toggleFAQ(id) {
-            const content = document.getElementById(`faq-${id}`);
-            const icon = document.getElementById(`icon-${id}`);
+            const faqContent = document.getElementById(`faq-${id}`);
+            const faqIcon = document.getElementById(`icon-${id}`);
             
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
+            // Toggle the content visibility
+            if (faqContent.classList.contains('hidden')) {
+                faqContent.classList.remove('hidden');
+                faqIcon.classList.remove('fa-chevron-down');
+                faqIcon.classList.add('fa-chevron-up');
             } else {
-                content.classList.add('hidden');
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+                faqContent.classList.add('hidden');
+                faqIcon.classList.remove('fa-chevron-up');
+                faqIcon.classList.add('fa-chevron-down');
             }
         }
+        
+        // Formspree Form Submission with Custom Success Message
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('earlyAccessForm');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    const originalText = submitButton.innerHTML;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                    submitButton.disabled = true;
+                    
+                    const formData = new FormData(form);
+                    
+                    fetch('https://formspree.io/f/mnndzdel', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.ok) {
+                            // Get the email for the success message
+                            const email = document.getElementById('email').value;
+                            
+                            // Show success message
+                            form.innerHTML = `
+                                <div class="text-center py-8">
+                                    <div class="text-center py-8">
+                                    <div class="text-green-500 mb-4">
+                                        <i class="fas fa-check-circle text-5xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-medium text-gray-900 mb-2">Thank you for your interest</h3>
+                                    <p class="text-base text-gray-600 mb-4">We have received your request and will be in touch within 24 hours.</p>
+                                    <p class="text-blue-600 font-medium">Please monitor ${email} for further instructions.</p>
+                                </div>
+                            `;
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                    })
+                    .catch(error => {
+                        // Reset button state
+                        submitButton.innerHTML = originalText;
+                        submitButton.disabled = false;
+                        
+                        // Show error message
+                        const formContainer = form.parentElement;
+                        const errorMessage = document.createElement('div');
+                        errorMessage.className = 'bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4';
+                        errorMessage.innerHTML = `
+                            <strong class="font-medium">Submission Error:</strong>
+                            <span class="block sm:inline"> Please try again or contact us directly.</span>
+                        `;
+                        formContainer.insertBefore(errorMessage, form);
+                    });
+                });
+            }
+        });
+        
+        // Mobile Navigation Toggle - Updated to include FAQ but remove How It Works
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'mobile-menu hidden fixed top-16 left-0 right-0 bg-white shadow-md py-4 px-4 z-50';
+            mobileMenu.innerHTML = `
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium py-2">Features</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium py-2">FAQ</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition text-center">Request Early Access</a>
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Update URL without page reload
+                        history.pushState(null, null, targetId);
+                    }
+                });
+            });
+        });
     </script>
 </body>
-</html>
+</html> 
